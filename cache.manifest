@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# Version: 20120803-07
+
+CACHE:
+index.html
+lib/jquery.js
+lib/GameTable.js
+lib/game.js
+lib/style.css
+lib/icon.png
+
+NETWORK:
+http://www.google-analytics.com/ga.js
+http://pagead2.googlesyndication.com/pagead/show_ads.js

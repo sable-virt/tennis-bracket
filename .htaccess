@@ -1,0 +1,5 @@
+AddType text/cache-manifest .manifest
+
+#location ~ \.manifest$ {
+#  add_header Content-Type text/cache-manifest;
+#}

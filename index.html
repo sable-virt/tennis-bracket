@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Simple Match</title>
+<meta name="description" content="テニス等の乱数対戦表を作成するWebアプリ" />
+<meta name="keywords" content="テニス,乱数表,対戦表,乱数対戦表,対戦乱数表,オフライン,Webアプリ" />
+<link rel="stylesheet" href="lib/style.css" />
+<link rel="apple-touch-icon-precomposed" href="lib/icon.png"/>
+<link rel="shortcut icon" href="lib/icon.ico" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+	<div id="wrap">
+		<h1>Simple Match</h1>
+		<div>
+			形式：
+			<select id="type">
+				<option value="single">シングルス</option>
+				<option value="double" selected>ダブルス</option>
+			</select>
+			人数：
+			<select id="num">
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+			</select>
+		</div>
+		<div class="button">
+			<a onclick="getNumber();">順番を決める</a><span id="rest"></span>
+			<a class="blue" onclick="generate();">試合開始</a>
+		</div>
+		
+		<h2 id="game">
+			
+		</h2>
+		<div class="button btn">
+			<a class="prev" onclick="showPrevGame();">前の試合</a>
+			<a class="next" value="" onclick="showNextGame();">次の試合</a>
+		</div>
+		<ul id="all-game" class="clearfix">
+			
+		</ul>
+		<div class="button btn">
+			<a class="prev" onclick="showPrevGame();">前の試合</a>
+			<a class="next" value="" onclick="showNextGame();">次の試合</a>
+		</div>
+		<p>copyright&copy; <a href="http://frontainer.com" target="_blank">frontainer.com</a>. All rights reserved.</p>
+	</div>
+	<div class="center">
+		<script type="text/javascript">
+		if (navigator.onLine) {
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-28381001-1']);
+			_gaq.push(['_trackPageview']);
+			
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+			google_ad_client = "ca-pub-3572999240250674";
+			google_ad_slot = "8232033244";
+			google_ad_width = 320;
+			google_ad_height = 50;
+			
+			document.write("<script type='text/javascript' src='http://pagead2.googlesyndication.com/pagead/show_ads.js'>" + "</scr" + "ipt>"); 
+		}
+		</script>
+	</div>
+	<script src="lib/jquery.js"></script>
+	<script src="lib/GameTable.js"></script>
+	<script src="lib/game.js"></script>
+</body>
+</html>

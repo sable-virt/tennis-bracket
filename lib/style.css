@@ -1,0 +1,70 @@
+/* For modern browsers */
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix { zoom:1; }
+
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
+#wrap {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 1024px;
+}
+h1 {
+	font-size: 22px;
+}
+h2 {
+	font-size: 28px;
+}
+.button a {
+	background: #eee;
+	border: 1px solid #ccc;
+	padding: 6px 18px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 14px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+ul li {
+	width: 50%;
+	padding: 5px 0;
+	float: left;
+}
+.btn {
+	display: none;
+}
+.center {
+	text-align: center;
+}
+#wrap div {
+	margin-bottom: 15px;
+}
+.button a.blue {
+	background: #0099FF;
+	color: #fff;
+}
+.active {
+	background: #eee;
+	font-weight: bold;
+}
+.disabled {
+	opacity: 0.4;
+}
+
+@media screen and (max-width: 480px) {
+	ul li {
+		width: 100%;
+	}
+}
